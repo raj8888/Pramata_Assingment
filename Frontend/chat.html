@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+      <div id="chatContainer">
+        <h2>Chat App</h2>
+        <div id="channelList">
+          <h3>Channels: <button id="buttonforchanne">Click Here</button></h3>
+          <ul id="channelItems"></ul>
+        </div>
+        <h2>General Channel</h2>
+        <div id="messageContainer"></div>
+        
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    
+      <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+      <script src="client.js"></script>
+</body>
+</html>
